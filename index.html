@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Mili </h1> <br>
+        <h1>Mohammad Ali</h1>
+    </div>
+    <div class="propic">
+        <img src="css/img/IMG_20170406_160106.jpg" class="pic">
+    </div>
+    <div class="see">
+
+    </div>
+    <div class="test">
+            <div class="info">
+                    <h3><b>Personal Information</b></h3>
+                    Graphics designer | Calligrapher | Web devoploper <br>
+                    Uttara, Sector 13, Road 4, Dhaka, Bangladesh <br>
+                    <i class="far fa-envelope-open"></i> milimdali@gmail.com <br>
+                    Studing at <a href="https://www.bracu.ac.bd/">BRAC University</a><br>
+                    CSE Department <br>
+                    <a href="#edu">More about education </a> 
+                    <a href="#skl">& skills </a>
+                </div>
+    </div>
+    
+<!-- Quote -->
+    <div class="quo">
+    <i><p>One of my favourite quote is -</p></i>
+    <blockquote cite="https://www.brainyquote.com/quotes/albert_einstein_148788">
+    <i>"A person who never made a mistake never tried anything new" -Albert Eiestein</i>
+    </blockquote>
+    </div> 
+<!-- Interests -->
+    <div class="container-fluid int">
+        <div class="inth">
+            Interests
+        </div>
+        <div class="intd">
+            <ul>
+                <li>
+                    Calligraphy
+                </li>
+                <li>
+                    Illustration
+                </li>
+                <li>
+                    Designing
+                </li>
+                <li>
+                    Photography
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- Skills -->
+    <div class="skill">
+        <div class="skillh">
+            <h2>My skills</h2>
+            <a name="skl">
+            <div class="part1">
+                <i class="fas fa-laptop-code"></i> <br>
+                <p>Java, PHP, Mysql, Bootstrap </p>
+            </div>
+            <div class="part2">
+                <i class="fas fa-paint-brush"></i> <br>
+                <p>Inkscape</p>
+            </div>
+            </a>
+        </div>
+        <div class="learn">
+            <h2>Currently Learnining</h2>
+            <div class="lp1">
+                <h3>Programming for the Internet</h3>
+                <p>Has taken this course to have better understanding in developing web-based applications.</p>
+                <p>There is also a class for this course in <a href="http://piazza.com/brac_university/spring2019/cse391">PIAZZA.</a></p>
+            </div>
+            <div class="lp2">
+                <h3>Reactjs</h3>
+                <p>Learning it by myself from online documentations and video tutorials.</p>
+            </div>
+        </div>
+    </div>
+
+<!-- links -->
+    <div class="pro">
+        <h1>Profile Links</h1>
+        <ul>
+            <li>
+                <a href="https://plus.google.com/u/0/+MiliMdAli"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/mili-mohammad-ali-24a674118/"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/milimdalibdbc"><i class="fab fa-behance"></i></a>
+            </li>
+            <li>
+                <a href="https://dribbble.com/milimdali"><i class="fab fa-dribbble"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/milimdali56"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+                <a href="https://www.pinterest.com/milimdali/"><i class="fab fa-pinterest-p"></i></a>
+            </li>
+        </ul>
+    </div>
+<!-- Education -->
+<a name="edu">
+    <div class="edu">
+        <h1>Education</h1>
+        <table id="t01">
+            <tr>
+              <th>Institute</th>
+              <th>Certificate</th> 
+              <th>Group / Major</th> 
+              <th>Passing Year</th>
+              <th>GPA/CGPA</th>
+            </tr>
+            <tr>
+              <td>Shahajuddin Sarkar Model School & College</td>
+              <td>Secondary School Certificate</td>
+              <td>Science</td>
+              <td>2010</td>
+              <td>5/5</td>
+            </tr>
+            <tr>
+              <td>Milestone College</td>
+              <td>Higher Secondary School Certificate</td>
+              <td>Science</td>
+              <td>2012</td>
+              <td>5/5</td>
+            </tr>
+            <tr>
+              <td>BRAC University</td>
+              <td>B.Sc(undergraduation)</td>
+              <td>Computer Science and Engineering</td>
+              <td>2014 - continuing</td>
+              <td>--</td>
+            </tr>
+          </table>
+    </div>
+</a>
+       <sup> <p id="page"></p>
+        <p id="demo"></p> </sup>
+
+<!-- last modified -->
+<script>
+    document.getElementById("page").innerHTML = 
+    "Location of the current page is " + window.location.href;
+
+    window.onload = function() { lmod(); };
+    function lmod() {
+        var x = document.lastModified;
+        document.getElementById("demo").innerHTML ="Last modified : "+ x;
+    }
+</script>
+</body>
+</html>
